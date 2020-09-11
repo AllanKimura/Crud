@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col s12 m6 push-m3">
                 <h3 class="light"> Relatório de vendas do dia </h3>
-                <form action="php_action/email.php" method="POST">
+                <form action="email.php" method="POST">
 
                     <div class="input-field col s12">
                         <input type="text" name="email" id="email"/>

@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="input-field col s12">
-                        <input type="text" name="email" id="email"/>
+                        <input type="email" name="email" id="email"/>
                         <label for="email"> Email </label>
                     </div>
 
