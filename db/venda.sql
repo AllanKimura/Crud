@@ -19,7 +19,9 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 
-DROP TABLE IF EXISTS `nova_venda`;
+CREATE DATABASE venda;
+USE venda;
+
 CREATE TABLE IF NOT EXISTS `nova_venda` (
   `id_venda` int(11) NOT NULL AUTO_INCREMENT,
   `valor_venda` varchar(14) COLLATE utf8_unicode_ci NOT NULL,
@@ -28,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `nova_venda` (
   `comissao` varchar(14) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_venda`),
   KEY `id_fk` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 DROP TABLE IF EXISTS `vendedor`;
@@ -37,4 +39,4 @@ CREATE TABLE IF NOT EXISTS `vendedor` (
   `nome` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
